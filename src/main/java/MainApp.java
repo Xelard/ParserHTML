@@ -87,55 +87,6 @@ public class MainApp {
             e.printStackTrace();
         }
 
-
-/*        try {
-            String strHTML = getContent(strURL);
-            System.out.println(strHTML);
-        } catch (MalformedURLException e) {
-            System.out.println("Введен не корректный URL");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-    }
-
-    private static File writeToFile(InputStream source) throws IOException {
-
-        File file = File.createTempFile("web_page_", ".tmp");
-        OutputStream dest = new FileOutputStream(file);
-        byte[] buffer = new byte[16384];
-
-        while (true) {
-            int bytes = source.read(buffer);
-            if (bytes < 0) {
-                break;
-            }
-            dest.write(buffer, 0, bytes);
-        }
-        source.close();
-        return file;
-    }
-
-
-    public static String getContent(String url) throws IOException {
-
-        StringBuilder stringBuilder = new StringBuilder();
-        URL pageURL = new URL(url);
-        URLConnection uc = pageURL.openConnection();
-        BufferedReader br = new BufferedReader(new InputStreamReader(uc.getInputStream(), "UTF-8"));
-
-        try {
-            String str;
-            while ((str = br.readLine()) != null) {
-                stringBuilder.append(str);
-            }
-        } finally {
-            br.close();
-        }
-        return stringBuilder.toString();
-
- */
     }
 
 }
